@@ -1,0 +1,56 @@
+.container {
+    background: rgb(148, 144, 144);
+    margin: 50px auto;
+    max-width: 80%;
+    text-align: center;
+    padding: 2%;
+}
+
+button {
+    margin: 1em;
+}
+
+input {
+    margin-top: 1em;
+}
+
+.footer {
+    background: rgb(148, 144, 144);
+    text-align: center;
+    padding: 2%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#videos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+
+.video-player{
+    background-color: black;
+    width: 100%;
+}
+
+#video-wrapper{
+    position: relative;
+}
+
+#waiting{
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 240px;
+    height: 40px;
+
+}
+
+#answer{
+    
+}

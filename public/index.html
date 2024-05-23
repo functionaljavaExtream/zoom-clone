@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+<!--Bootstrap only for styling-->
+<link rel="stylesheet"
+ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script
+ src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ <!--Bootstrap only for styling-->
+ <script type="module" src="signalingChannel.js" defer></script>
+ <!-- <script type="module" src="script.js" defer></script> -->
+ <title>WebRTC</title>
+</head>
+<body>
+
+    <div class="container">
+     
+        <div class="row mb-3 mt-3 justify-content-md-center">
+            <!-- <div id="user-name"></div>
+            <button id="call" class="btn btn-primary col-1">Call!</button>
+            <button id="hangup" class="col-1" class="btn btn-primary">Hangup</button>
+            <div id="answer" class="col"></div> -->
+        </div>
+        <div id="videos">
+            <div id="video-wrapper">
+                <div id="waiting" class="btn btn-warning">Waiting for answer...</div>
+                <video class="video-player" id="user-1" autoplay playsinline controls></video>
+            </div>
+            <video class="video-player" id="user-2" autoplay playsinline controls></video>
+        </div>
+        <!--WebRTC related code-->
+        <button type="button" class="btn btn-primary" id="createOffer" >Create
+        Offer</button>
+        <input id="messageInput" type="text" class="form-control"
+        placeholder="message">
+        <button type="button" class="btn btn-primary" id="send">SEND</button>
+        
+        <!-- <script src="client.js"></script> -->
+        <!--WebRTC related code-->
+   
+    </div>
+    <div class="footer">This application is intentionally made simple
+     to avoid cluttering with non WebRTC related code.</div>
+   
+   </body>
+</html>
